@@ -1,0 +1,158 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.content{
+    width: 80%;
+    margin: 0 auto;
+}
+header{
+    background-color: gray;
+    color: red;
+}
+header > div{
+    display: flex;
+}
+hgroup{
+    margin: 20px 10px 10px 150px;
+}
+hgroup h1{
+    font-size: 35px;
+}
+hgroup h2{
+  font-size: 25px;  
+}
+figure{
+    margin-left: 0;
+    margin-top: 30px;
+}
+#contact div{
+    width: 700px;
+    position: absolute;
+    top: 10px;
+    right:0;
+}
+dl{
+    margin: 0;
+    width: 100%;
+    display: flex;
+}
+dt{
+    width: 125px;
+    background-color: red;
+    color:white;
+    padding:4px;
+}
+dd{
+    width: 575px;
+    color: red;
+    margin-left: 0px;
+    background-color: black;
+}
+#contact h3{
+    display:none;
+}
+.contact-value a{
+    text-decoration: none;
+    color: red;
+}
+.contact-skype .contact-value{
+    color: black;
+}
+h3{
+    padding-bottom: 15px;
+    border-bottom: 1px solid #b1b1b1;
+}
+section h3::before{
+    content: "";
+    height:18px;
+    width:18px;
+    background-color: #ff0000;
+    border-radius:50%;
+    display:inline-block;
+    margin-right: 5px;
+}
+.skills-primary::before{
+    content: "Main";
+}
+.skills-secondary::before{
+    content: "Other";
+}
+.skill{
+    width: 100%;
+    color: white;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    padding: 3px;
+    padding-left: 5px;
+}
+.skills-primary .skill {
+    background-color: #b1b1b1;
+}
+.skills-secondary .skill {
+    background-color: #ddd;
+}
+.skill span{
+    padding: 5px;
+    display: inline-block;
+}
+[data-skill="5"] span{
+    width: 50%;
+    background-color: red;
+}
+[data-skill="3"] span{
+    width: 30%;
+    background-color: red;
+}
+[data-skill="1"] span{
+    width: 10%;
+    background-color: red;
+}
+[data-skill="9"] span{
+    width: 90%;
+    background-color: red;
+}
+[data-skill="5"] span{
+    width: 50%;
+    background-color: red;
+}
+[data-skill="7"] span{
+    width: 70%;
+    background-color: red;
+}
+.about{
+    float: left;
+}
+.experience-type{
+    color: red;
+    font-weight: bold;
+}
+.experience-institution, .experience-date-separator{
+    color: red;
+    font-weight: lighter;
+}
+.experience-institution::before{
+    content: "@ ";
+    color: red;
+}
+.experience-location::before{
+    content: "In";
+    color: #b1b1b1;
+}
+.experience-date::before{
+    content: "on";
+    color: #b1b1b1;
+}
+.experience-details{
+    color: #b1b1b1;
+    margin-left: 10px;
+}
+.experience h4{
+    margin-bottom: 1px;
+}
+p{
+    padding-right: 30px;
+}
+.content{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
