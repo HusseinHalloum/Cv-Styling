@@ -156,6 +156,12 @@ p{
     display: grid;
     grid-template-columns: 2fr 2fr;
 }
+
+/*
+     max width for @ media = 600 px to show the difference on the laptop
+     but it should be less than 480 for mobile 
+*/
+
 @media only screen and (max-width: 600px) {
     .content{
         display: flex;

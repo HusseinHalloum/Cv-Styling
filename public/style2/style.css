@@ -1,0 +1,152 @@
+body{
+    width: 70%;
+    margin: 0 auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+hgroup{
+    padding-top: 40px;
+    border-bottom: 1px solid #b1b1b1;
+}
+hgroup h2, #about h3{
+    display: none;
+}
+figure{
+    float: right;
+    margin-right: 400px;
+}
+figure img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50px;
+    margin-left: 100px;
+    -webkit-transform:rotate(340deg);
+    -moz-transform: rotate(340deg);
+    -ms-transform: rotate(340deg);
+    -o-transform: rotate(340deg);
+    transform: rotate(340deg);
+}
+#about p{
+    margin-right: 400px;
+    color: #b1b1b1;
+    font-style: italic;
+}
+section{
+    margin-top: 30px;
+}
+section h3{
+    margin-right: 0px;
+    font-weight: bold;
+    font-style: italic;
+}
+#experiences, #education, #competencies, #hobbies{
+    display: grid;
+    grid-template-columns: 0.6fr 4fr;
+}
+.skills ,.experience, ul{
+    padding-top: 0px;
+    padding-left: 20px;
+    border-left: 1px solid black;
+}
+.skills-secondary,
+ #experiences .experience:nth-of-type(2),
+ #education .experience:nth-of-type(2){
+    grid-column: 2/3;
+}
+.skills{
+    display: flex;
+    flex-direction: row;
+}
+.skill{
+    width: 20%;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    background-color:  rgb(26, 143, 143);
+    color: white;
+}
+.skills-primary{
+    padding-top: 10px;
+}
+.skills-secondary{
+    padding-bottom: 10px;
+}
+.experience h4, .experience-date-separator{
+    color: rgb(26, 143, 143);
+}
+.experience-institution{
+    color: white;
+}
+.experience h4{
+    float: left;
+}
+.experience-details{
+    float: right;
+    color:  #b1b1b1;
+    margin-top: 20px;
+}
+.experience p{
+    float: left;
+}
+[data-skill] span::after{
+    color: white;
+    float: right;
+}
+.skills-secondary{
+    font-size: 10px;
+}
+.skills-primary [data-skill="5"] span::after{
+    content: "\2605\2605\2605";
+    font-size: 20px;
+}
+[data-skill="3"] span::after{
+    content: "\2605\2605";
+    font-size: 20px;
+}
+[data-skill="1"] span::after{
+    content: "\2605";
+    font-size: 20px
+}
+[data-skill="9"] span::after{
+    content: "\2605\2605\2605\2605\2605";
+    font-size: 8px;
+}
+[data-skill="5"] span::after{
+    content: "\2605\2605\2605";
+    font-size: 8px;
+}
+[data-skill="7"] span::after{
+    content: "\2605\2605\2605\2605\2605";
+    font-size: 8px;
+}
+#contact h3, .contact-skype{
+    display: none;
+}
+.contact-email{
+    content: url(../images/email.png);
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-left: 100px;
+}
+.contact-github{
+    content: url(../images/github.png);
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+.contact-phone{
+    content: url(../images/phone.png);
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+.contact-facebook{
+    content: url(../images/facebook.png);
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+.contact{
+    margin-right: 30px;;
+}
