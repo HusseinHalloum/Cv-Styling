@@ -150,3 +150,47 @@ section h3{
 .contact{
     margin-right: 30px;;
 }
+/*
+     max width for @ media = 600 px to show the difference on the laptop
+     but it should be less than 480 for mobile 
+*/
+
+@media only screen and (max-width: 600px){
+    body{
+        width: 95%;
+        margin: 0 auto;
+    }
+    img{
+        display: none;
+    }
+    #about p{
+        margin-right: 0px;
+    }
+    #experiences, #education, #competencies, #hobbies{
+        display: initial;
+    }
+    .skills ,.experience{
+        border-left: none;
+        padding-left: 0px;
+    }
+    ul{
+        border-left: none;
+        padding-left: 40px;
+    }
+    .skill{
+        width: 30%;
+    }
+    section h3{
+        margin-right: 70%;;
+        border-bottom: 1px solid black;
+    }
+    .skills-primary, .skills-primary [data-skill] span::after{
+        font-size: 15px;
+    }
+    .contact-email, .contact-facebook{
+        margin-left: 30px;
+    }
+    .contact{
+        margin-right: 30px;
+    }
+}
