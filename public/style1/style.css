@@ -1,35 +1,44 @@
 body{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 70);
+    background-color: rgb(224, 224, 224);
 }
 .content{
     width: 80%;
     margin: 0 auto;
 }
 header{
-    background-color: gray;
-    color: red;
+    background-color: rgb(207, 207, 207);
+    color: rgb(0, 0, 70);
+    border-bottom: 5px solid goldenrod;
 }
 header > div{
     display: flex;
 }
 hgroup{
-    margin: 20px 10px 10px 150px;
+    margin: 20px 10px 10px 15px;
 }
 hgroup h1{
     font-size: 35px;
+    margin-bottom: 0px;
 }
 hgroup h2{
-  font-size: 25px;  
+    margin-top: 0px;
+    font-size: 25px;  
 }
 figure{
-    margin-left: 0;
+    margin-left: 200px;
     margin-top: 30px;
 }
-#contact div{
-    width: 52%;
-    position: absolute;
-    top: 10px;
-    right:0;
+img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.contacts{
+    margin-top: 30px;
+    margin-left: 200px;
+    margin-bottom: 20px;
 }
 dl{
     margin: 0;
@@ -37,124 +46,61 @@ dl{
     display: flex;
 }
 dt{
-    width: 125px;
-    background-color: red;
-    color:white;
+    width: 150px;
+    background-color: goldenrod;
+    color:rgb(0, 0, 70);
     padding:4px;
 }
 dd{
-    width: 575px;
-    color: red;
+    width: 340px;
+    color:  goldenrod;
+    padding-left: 20px;
     margin-left: 0px;
-    background-color: black;
-}
-#contact h3{
-    display: none;
+    background-color: rgb(0, 0, 70);
 }
 .contact-value a{
     text-decoration: none;
-    color: red;
+    color: goldenrod;
 }
-.contact-skype .contact-value{
-    color: black;
+section{
+    display: grid;
+    grid-template-columns: 0.6fr 4fr;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid goldenrod;
 }
+.skills-secondary,
+ #experiences .experience:nth-of-type(2),
+ #education .experience:nth-of-type(2){
+    grid-column: 2/3;
+ }
 h3{
-    padding-bottom: 15px;
-    border-bottom: 1px solid #b1b1b1;
+    color: goldenrod;
+    font-style: italic;
+    font-size: 22px;
 }
-section h3::before{
-    content: "";
-    height:18px;
-    width:18px;
-    background-color: #ff0000;
-    border-radius:50%;
-    display:inline-block;
-    margin-right: 5px;
-}
-.skills-primary::before{
-    content: "Main";
-}
-.skills-secondary::before{
-    content: "Other";
-}
-.skill{
-    width: 100%;
-    color: white;
-    letter-spacing: 1px;
-    margin-bottom: 5px;
-    padding: 3px;
-    padding-left: 5px;
-}
-.skills-primary .skill {
-    background-color: #b1b1b1;
-}
-.skills-secondary .skill {
-    background-color: #ddd;
-}
-.skill span{
-    padding: 5px;
-    display: inline-block;
-}
-[data-skill="5"] span{
-    width: 50%;
-    background-color: red;
-}
-[data-skill="3"] span{
-    width: 30%;
-    background-color: red;
-}
-[data-skill="1"] span{
-    width: 10%;
-    background-color: red;
-}
-[data-skill="9"] span{
-    width: 90%;
-    background-color: red;
-}
-[data-skill="5"] span{
-    width: 50%;
-    background-color: red;
-}
-[data-skill="7"] span{
-    width: 70%;
-    background-color: red;
-}
-.about{
-    float: left;
-}
-.experience-type{
-    color: red;
+.edu-location{
     font-weight: bold;
 }
-.experience-institution, .experience-date-separator{
-    color: red;
-    font-weight: lighter;
+.date-separator{
+    color:goldenrod;
+    font-weight: bold;
+    font-size: 20px;
 }
-.experience-institution::before{
-    content: "@ ";
-    color: red;
+.edu-details, .experience-details{
+    color: rgb(0, 0, 70);
+    font-style: italic;
 }
-.experience-location::before{
-    content: "In";
-    color: #b1b1b1;
-}
-.experience-date::before{
-    content: "on";
-    color: #b1b1b1;
-}
-.experience-details{
-    color: #b1b1b1;
-    margin-left: 10px;
-}
-.experience h4{
+.experience h4,ul ,#profile p{
+    padding-top: 10px;
     margin-bottom: 1px;
 }
 p{
-    padding-right: 30px;
+    padding-right: 50px;
 }
-.content{
-    display: grid;
-    grid-template-columns: 2fr 2fr;
+ul{
+    padding-left: 0;
+    margin-left: 10px;
 }
 
 /*
